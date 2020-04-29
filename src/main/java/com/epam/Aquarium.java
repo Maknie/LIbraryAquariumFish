@@ -14,6 +14,13 @@ public class Aquarium {
             System.out.println(listOfFish);
         }
     }
+    public Fish getFishById(int id){
+        for (Fish fish : listOfFishes) {
+            if (fish.getId()==id)
+                return fish;
+        }
+        return new Fish();
+    }
 
     public void addFish(Fish fish) {
         listOfFishes.add(fish);

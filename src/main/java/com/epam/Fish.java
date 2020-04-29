@@ -4,7 +4,7 @@ public class Fish {
     private String name;
     private int age;
     private String color;
-    private int id;
+    int id;
 
     public int getId() {
         return id;
