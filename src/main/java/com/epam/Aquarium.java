@@ -3,7 +3,7 @@ package com.epam;
 import java.util.ArrayList;
 
 public class Aquarium {
-    private static int id = 0;
+    private int id = 0;
     private ArrayList<Fish> listOfFishes = new ArrayList<Fish>();
 
     public Aquarium() {
@@ -27,7 +27,7 @@ public class Aquarium {
         fish.setId(increaseId());
     }
 
-    private static int increaseId(){
+    private int increaseId(){
         return id++;
     }
 
